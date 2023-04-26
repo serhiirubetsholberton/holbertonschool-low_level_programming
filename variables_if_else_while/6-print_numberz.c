@@ -7,11 +7,11 @@
  */
 int main(void)
 {
-	int charCode;
+	int code;
 
-	for (charCode = 48; charCode < 58; charCode++)
+	for (code = 48; code < 58; code++)
 	{
-		putchar(charCode);
+		putchar(code);
 	}
 
 	putchar('\n');
