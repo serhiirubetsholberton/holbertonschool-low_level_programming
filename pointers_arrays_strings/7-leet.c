@@ -8,25 +8,26 @@
  */
 char *leet(char *s)
 {
-	int leftPointer = 0, rightPointer = 0, l = 5;
+	int left = 0, right = 0, l = 5;
 	char r[5] = {'A', 'E', 'O', 'T', 'L'};
 	char n[5] = {'4', '3', '0', '7', '1'};
 
-	while (s[leftPointer])
+	while (s[left])
 	{
-		rightPointer = 0;
+		right = 0;
 
-		while (rightPointer < l)
+		while (right < l)
 		{
-			if (s[leftPointer] == r[rightPointer] || s[leftPointer] - 32 == r[rightPointer])
+			if (
+				s[left] == r[right] || s[left] - 32 == r[right])
 			{
-				s[leftPointer] = n[rightPointer];
+				s[left] = n[right];
 			}
 
-			rightPointer++;
+			right++;
 		}
 
-		leftPointer++;
+		left++;
 	}
 
 	return (s);
